@@ -114,7 +114,7 @@ Let's run the query on the example table by hand.
 
 For each row in **w1** (today), we look for a row in **w2** whose date is exactly one day earlier.
 
-**Day 1: `2015-01-01` (id 1)**
+**Day 1: `2015-01-01` (id 1)** 
 - Yesterday would be `2014-12-31`.
 - Is there a row with that date? **No.**
 - So day 1 has no partner, and it is **dropped**. (Makes sense: we can't say if it got hotter if we don't know yesterday.)
