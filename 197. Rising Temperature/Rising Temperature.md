@@ -236,7 +236,7 @@ def rising_temperature(weather: pd.DataFrame) -> pd.DataFrame:
     weather["recordDate"] = pd.to_datetime(weather["recordDate"])
     weather = weather.sort_values("recordDate")
 
-    prev = weather.shift(1)  # the row just before, after sorting by date
+    prev = weather.shift(1) 
 
     is_yesterday = (weather["recordDate"] - prev["recordDate"]).dt.days == 1
     is_warmer = weather["temperature"] > prev["temperature"]
