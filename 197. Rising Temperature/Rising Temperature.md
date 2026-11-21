@@ -120,7 +120,7 @@ For each row in **w1** (today), we look for a row in **w2** whose date is exactl
 - So day 1 has no partner, and it is **dropped**. (Makes sense: we can't say if it got hotter if we don't know yesterday.)
 
 **Day 2: `2015-01-02` (id 2)** 
-- Yesterday is `2015-01-01`. That row exists (id 1, temp 10). ✅
+- Yesterday is `2015-01-01`. That row exists (id 1, temp 10). ✅ 
 - Pair: **today = 25, yesterday = 10**
 
 **Day 3: `2015-01-03` (id 3)**
