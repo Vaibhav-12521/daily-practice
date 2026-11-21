@@ -12,6 +12,21 @@ Each solved problem lives in its own folder with a `.md` file named after the pr
 problem statement, an example, an explanation, and the solution code (submitted language first, with
 extra reference implementations where useful).
 
+## 🤝 Connect With Me
+
+<a href="https://vaibhav1.me" target="_blank">
+  <img src="https://img.shields.io/badge/🌐_Portfolio-vaibhav1.me-00D4FF?style=for-the-badge" alt="Portfolio"/>
+</a>
+<a href="https://www.linkedin.com/in/vaibhavsingh125/" target="_blank">
+  <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/>
+</a>
+<a href="mailto:singh12521vaibhav@gmail.com">
+  <img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/>
+</a>
+<a href="https://leetcode.com/u/vaibhav125s/" target="_blank">
+  <img src="https://img.shields.io/badge/LeetCode-FFA116?style=for-the-badge&logo=leetcode&logoColor=black" alt="LeetCode"/>
+</a>
+
 ## 📊 Progress
 
 <table>
