@@ -254,3 +254,22 @@ def rising_temperature(weather: pd.DataFrame) -> pd.DataFrame:
 - To find "yesterday", use **date functions** like `DATE_ADD` or `DATEDIFF`.
 - **Never** use `id` to decide which day comes before another.
 - Days with no yesterday (like the first day) get dropped automatically by `JOIN`.
+
+---
+
+## 🤝 Connect With Me
+
+<a href="https://vaibhav1.me" target="_blank">
+  <img src="https://img.shields.io/badge/🌐_Portfolio-vaibhav1.me-00D4FF?style=for-the-badge" alt="Portfolio"/>
+</a>
+<a href="https://www.linkedin.com/in/vaibhavsingh125/" target="_blank">
+  <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/>
+</a>
+<a href="mailto:singh12521vaibhav@gmail.com">
+  <img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/>
+</a>
+<a href="https://leetcode.com/u/vaibhav125s/" target="_blank">
+  <img src="https://img.shields.io/badge/LeetCode-FFA116?style=for-the-badge&logo=leetcode&logoColor=black" alt="LeetCode"/>
+</a>
+
+[⬅️ Back to all problems](../README.md)
