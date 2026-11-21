@@ -8,9 +8,7 @@
 
 My daily coding practice solutions from **LeetCode**, **HackerRank**, and other platforms.
 
-Each solved problem lives in its own folder with a `.md` file named after the problem, containing the
-problem statement, an example, an explanation, and the solution code (submitted language first, with
-extra reference implementations where useful).
+Each solved problem lives in its own folder with a `.md` file named after the problem, containing the problem statement, an example, an explanation, and the solution code (submitted language first, with extra reference implementations where useful).
 
 ## 🤝 Connect With Me
 
