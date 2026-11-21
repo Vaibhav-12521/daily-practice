@@ -45,8 +45,7 @@ extra reference implementations where useful).
 | 🔴 Hard | **0** | `░░░░░░░░░░` 0% |
 | **Total** | **1** | |
 
-</td>
-<td valign="top">
+</td><td valign="top">
 
 | Platform | Solved | Share |
 |----------|:------:|-------|
