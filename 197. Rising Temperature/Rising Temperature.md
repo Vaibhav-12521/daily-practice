@@ -1,20 +1,12 @@
 # 197. Rising Temperature
 
-| Platform | Difficulty | Topic | Submitted In | Status |
-|----------|------------|-------|--------------|--------|
-| [LeetCode](https://leetcode.com/problems/rising-temperature/) | 🟢 Easy | Database, Self Join, Date Functions | MySQL | ✅ Accepted (79 ms) |
+| Platform | Difficulty | Topic | Language | Status |
+|----------|:----------:|-------|----------|:------:|
+| [LeetCode](https://leetcode.com/problems/rising-temperature/) | 🟢 Easy | SQL, Self Join, Date Functions | MySQL | ✅ Accepted (79 ms) |
 
-## Objective
+---
 
-In this challenge, we practice **self joins** and **date arithmetic**: comparing each row of a table with another row of the same table that is exactly one day earlier.
-
-## Task
-
-Write a solution to find all dates' `id` with **higher temperatures** compared to its previous calendar date (yesterday).
-
-Return the result table in **any order**.
-
-## Schema
+## 📝 Question
 
 Table: `Weather`
 
@@ -32,7 +24,11 @@ Table: `Weather`
 - There are no different rows with the same `recordDate`.
 - This table contains information about the temperature on a certain day.
 
-## Example
+Write a solution to find all dates' `id` with **higher temperatures** compared to its **previous date** (yesterday).
+
+Return the result table in **any order**.
+
+### Example 1
 
 **Input:** `Weather` table
 
@@ -58,35 +54,152 @@ Table: `Weather`
 +----+
 ```
 
-## Explanation
+**Explanation:**
 
-Compare each day with the day **before** it:
+- On `2015-01-02`, the temperature was higher than the day before (10 → 25).
+- On `2015-01-04`, the temperature was higher than the day before (20 → 30).
 
-| id | recordDate | temperature | Yesterday's temperature | Warmer? |
-|----|------------|-------------|-------------------------|---------|
-| 1 | 2015-01-01 | 10 | no record | ❌ |
-| 2 | 2015-01-02 | 25 | 10 | ✅ `25 > 10` |
-| 3 | 2015-01-03 | 20 | 25 | ❌ `20 < 25` |
-| 4 | 2015-01-04 | 30 | 20 | ✅ `30 > 20` |
+---
 
-So the answer is ids `2` and `4`.
+## 💡 What Is the Question Really Asking?
 
-### ⚠️ Common Pitfall
+Go through the days one by one and ask a simple question:
 
-Don't join on `w1.id = w2.id + 1`. Ids are **not guaranteed** to be in date order, and dates can have **gaps** (e.g. `2015-01-01` followed by `2015-01-05`). "Yesterday" must be decided by the **date**, not by the id or by row order.
+> **"Was today hotter than yesterday?"**
 
-## Solutions
+If yes, write down today's `id`. That's it.
 
-### MySQL ✅ (submitted)
+The only tricky part: we have just **one table**, but we need to look at **two days at the same time** (today and yesterday). So we use the same table twice, once as "today" and once as "yesterday". This is called a **self join**.
+
+---
+
+## ✅ Solution (MySQL)
 
 ```sql
 SELECT w1.id
 FROM Weather w1
-JOIN Weather w2 ON w1.recordDate = DATE_ADD(w2.recordDate, INTERVAL 1 DAY)
+JOIN Weather w2
+  ON w1.recordDate = DATE_ADD(w2.recordDate, INTERVAL 1 DAY)
 WHERE w1.temperature > w2.temperature;
 ```
 
-### MySQL: alternative with `DATEDIFF`
+### What Each Line Does
+
+| Line | In simple words |
+|------|-----------------|
+| `FROM Weather w1` | Open the table and call it **w1**. Think of w1 as **"today"**. |
+| `JOIN Weather w2` | Open the **same** table again and call it **w2**. Think of w2 as **"yesterday"**. |
+| `ON w1.recordDate = DATE_ADD(w2.recordDate, INTERVAL 1 DAY)` | Stick a row of w1 next to a row of w2 **only if** w1's date is exactly **one day after** w2's date. So every "today" gets paired with its real "yesterday". |
+| `WHERE w1.temperature > w2.temperature` | From those pairs, keep only the ones where **today was hotter** than yesterday. |
+| `SELECT w1.id` | Show the `id` of those hotter days. |
+
+---
+
+## 🔍 Step-by-Step Dry Run
+
+Let's run the query on the example table by hand.
+
+```
++----+------------+-------------+
+| id | recordDate | temperature |
++----+------------+-------------+
+| 1  | 2015-01-01 | 10          |
+| 2  | 2015-01-02 | 25          |
+| 3  | 2015-01-03 | 20          |
+| 4  | 2015-01-04 | 30          |
++----+------------+-------------+
+```
+
+### Step 1: Find "yesterday" for every day (the `JOIN`)
+
+For each row in **w1** (today), we look for a row in **w2** whose date is exactly one day earlier.
+
+**Day 1: `2015-01-01` (id 1)**
+- Yesterday would be `2014-12-31`.
+- Is there a row with that date? **No.**
+- So day 1 has no partner, and it is **dropped**. (Makes sense: we can't say if it got hotter if we don't know yesterday.)
+
+**Day 2: `2015-01-02` (id 2)**
+- Yesterday is `2015-01-01`. That row exists (id 1, temp 10). ✅
+- Pair: **today = 25, yesterday = 10**
+
+**Day 3: `2015-01-03` (id 3)**
+- Yesterday is `2015-01-02`. That row exists (id 2, temp 25). ✅
+- Pair: **today = 20, yesterday = 25**
+
+**Day 4: `2015-01-04` (id 4)**
+- Yesterday is `2015-01-03`. That row exists (id 3, temp 20). ✅
+- Pair: **today = 30, yesterday = 20**
+
+After the join, we have these pairs:
+
+```
++-------+------------+-----------+-------+------------+-----------+
+| w1.id | w1.date    | w1.temp   | w2.id | w2.date    | w2.temp   |
+|       | (today)    | (today)   |       | (yesterday)| (yesterday)|
++-------+------------+-----------+-------+------------+-----------+
+| 2     | 2015-01-02 | 25        | 1     | 2015-01-01 | 10        |
+| 3     | 2015-01-03 | 20        | 2     | 2015-01-02 | 25        |
+| 4     | 2015-01-04 | 30        | 3     | 2015-01-03 | 20        |
++-------+------------+-----------+-------+------------+-----------+
+```
+
+### Step 2: Keep only the hotter days (the `WHERE`)
+
+Now check each pair: **is today's temperature bigger than yesterday's?**
+
+| Today (id) | Today's temp | Yesterday's temp | Hotter? | Keep? |
+|:----------:|:------------:|:----------------:|---------|:-----:|
+| 2 | 25 | 10 | 25 > 10 → **Yes**, it got warmer | ✅ |
+| 3 | 20 | 25 | 20 > 25 → **No**, it got cooler | ❌ |
+| 4 | 30 | 20 | 30 > 20 → **Yes**, it got warmer | ✅ |
+
+### Step 3: Show the ids (the `SELECT`)
+
+The rows that survived are id **2** and id **4**.
+
+```
++----+
+| id |
++----+
+| 2  |
+| 4  |
++----+
+```
+
+This matches the expected output. 🎉
+
+---
+
+## ⚠️ Common Mistake
+
+A lot of people write this:
+
+```sql
+-- ❌ Wrong
+JOIN Weather w2 ON w1.id = w2.id + 1
+```
+
+It looks right on the example, but it's a trap. The `id` only tells you the row number, **not the date**. Imagine this table:
+
+```
++----+------------+-------------+
+| id | recordDate | temperature |
++----+------------+-------------+
+| 1  | 2015-01-01 | 10          |
+| 2  | 2015-01-05 | 25          |
++----+------------+-------------+
+```
+
+Using ids, the query would say id 2 is "hotter than yesterday". But `2015-01-05` is not the day after `2015-01-01`, there are **3 missing days** in between. We don't know what yesterday's temperature was, so id 2 should **not** be in the answer.
+
+That's why we compare **dates**, never ids.
+
+---
+
+## 🔁 Other Ways to Write It
+
+**MySQL with `DATEDIFF`** (difference between the two dates must be 1 day):
 
 ```sql
 SELECT w1.id
@@ -95,23 +208,7 @@ JOIN Weather w2 ON DATEDIFF(w1.recordDate, w2.recordDate) = 1
 WHERE w1.temperature > w2.temperature;
 ```
 
-### MySQL: alternative with the `LAG` window function
-
-```sql
-SELECT id
-FROM (
-    SELECT id,
-           recordDate,
-           temperature,
-           LAG(recordDate)  OVER (ORDER BY recordDate) AS prev_date,
-           LAG(temperature) OVER (ORDER BY recordDate) AS prev_temp
-    FROM Weather
-) t
-WHERE temperature > prev_temp
-  AND DATEDIFF(recordDate, prev_date) = 1;   -- previous row must really be yesterday
-```
-
-### PostgreSQL
+**PostgreSQL / Oracle** (adding `1` to a date means "next day"):
 
 ```sql
 SELECT w1.id
@@ -120,7 +217,7 @@ JOIN Weather w2 ON w1.recordDate = w2.recordDate + 1
 WHERE w1.temperature > w2.temperature;
 ```
 
-### MS SQL Server
+**MS SQL Server:**
 
 ```sql
 SELECT w1.id
@@ -129,16 +226,7 @@ JOIN Weather w2 ON w1.recordDate = DATEADD(day, 1, w2.recordDate)
 WHERE w1.temperature > w2.temperature;
 ```
 
-### Oracle
-
-```sql
-SELECT w1.id
-FROM Weather w1
-JOIN Weather w2 ON w1.recordDate = w2.recordDate + 1
-WHERE w1.temperature > w2.temperature;
-```
-
-### Python (Pandas)
+**Python (Pandas):**
 
 ```python
 import pandas as pd
@@ -148,7 +236,7 @@ def rising_temperature(weather: pd.DataFrame) -> pd.DataFrame:
     weather["recordDate"] = pd.to_datetime(weather["recordDate"])
     weather = weather.sort_values("recordDate")
 
-    prev = weather.shift(1)  # the previous row, after sorting by date
+    prev = weather.shift(1)  # the row just before, after sorting by date
 
     is_yesterday = (weather["recordDate"] - prev["recordDate"]).dt.days == 1
     is_warmer = weather["temperature"] > prev["temperature"]
@@ -156,24 +244,13 @@ def rising_temperature(weather: pd.DataFrame) -> pd.DataFrame:
     return weather.loc[is_yesterday & is_warmer, ["id"]]
 ```
 
-### How the Solution Works
+> Only the MySQL solution at the top was submitted and accepted on LeetCode. The others are reference versions.
 
-1. **Self join**: treat `Weather` as two tables: `w1` (today) and `w2` (yesterday).
-2. **Match yesterday by date**: pair each row in `w1` with the row in `w2` whose date is exactly one day earlier (`w1.recordDate = w2.recordDate + 1 day`). The first day has no match, so the inner `JOIN` drops it automatically.
-3. **Filter warmer days**: keep only pairs where `w1.temperature > w2.temperature`.
-4. **Return the id**: select `w1.id`, the id of the warmer day.
+---
 
-The `LAG` and Pandas versions follow the same idea without a join: sort by date, look at the previous row, and **check that it really is yesterday** before comparing temperatures.
+## 🧠 Key Takeaways
 
-## Complexity
-
-| Approach | Time | Space |
-|----------|------|-------|
-| Self join on date | `O(n log n)` with an index on `recordDate` (`O(n²)` worst case without one) | `O(n)` |
-| `LAG` window function / Pandas `shift` | `O(n log n)` (sorting by date) | `O(n)` |
-
-## Key Takeaways
-
-- A **self join** lets you compare rows within the same table.
-- Use **date functions** (`DATE_ADD`, `DATEDIFF`, `DATEADD`, `date + 1`) to find "yesterday". Never rely on `id` order.
-- With window functions like `LAG`, always double-check that the previous row is the one you expect.
+- Need to compare a table with **itself**? Use a **self join** (same table, two names).
+- To find "yesterday", use **date functions** like `DATE_ADD` or `DATEDIFF`.
+- **Never** use `id` to decide which day comes before another.
+- Days with no yesterday (like the first day) get dropped automatically by `JOIN`.
