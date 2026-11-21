@@ -124,7 +124,7 @@ For each row in **w1** (today), we look for a row in **w2** whose date is exactl
 - Pair: **today = 25, yesterday = 10**
 
 **Day 3: `2015-01-03` (id 3)**
-- Yesterday is `2015-01-02`. That row exists (id 2, temp 25). ✅
+- Yesterday is `2015-01-02`. That row exists (id 2, temp 25). ✅  
 - Pair: **today = 20, yesterday = 25**
 
 **Day 4: `2015-01-04` (id 4)**
