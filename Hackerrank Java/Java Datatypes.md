@@ -136,7 +136,7 @@ public class Solution {
 ```
 
 ### What Each Part Does
-
+ 
 | Code | In simple words |
 |------|-----------------|
 | `int t = sc.nextInt();` | Read how many numbers we need to check. |
