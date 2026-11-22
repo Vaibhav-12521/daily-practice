@@ -99,5 +99,5 @@ daily-practice/
 ├── 197. Rising Temperature/
 │   └── Rising Temperature.md
 └── Hackerrank Java/
-    └── Java Datatypes.md
+    └── Java Datatypes.md 
 ```
