@@ -1,10 +1,10 @@
 # Daily Practice
 
-![Solved](https://img.shields.io/badge/Solved-2-brightgreen?style=for-the-badge)
+![Solved](https://img.shields.io/badge/Solved-3-brightgreen?style=for-the-badge)
 ![Easy](https://img.shields.io/badge/Easy-2-00b8a3?style=for-the-badge)
-![Medium](https://img.shields.io/badge/Medium-0-ffc01e?style=for-the-badge)
+![Medium](https://img.shields.io/badge/Medium-1-ffc01e?style=for-the-badge)
 ![Hard](https://img.shields.io/badge/Hard-0-ff375f?style=for-the-badge)
-![Last Solved](https://img.shields.io/badge/Last%20Solved-2026--11--21-blue?style=for-the-badge)
+![Last Solved](https://img.shields.io/badge/Last%20Solved-2026--11--22-blue?style=for-the-badge)
 
 My daily coding practice solutions from **LeetCode**, **HackerRank**, and other platforms.
 
@@ -38,17 +38,17 @@ Each solved problem lives in its own folder with a `.md` file named after the pr
 
 | Level | Solved | Share |
 |-------|:------:|-------|
-| 🟢 Easy | **2** | `██████████` 100% |
-| 🟡 Medium | **0** | `░░░░░░░░░░` 0% |
+| 🟢 Easy | **2** | `███████░░░` 67% |
+| 🟡 Medium | **1** | `███░░░░░░░` 33% |
 | 🔴 Hard | **0** | `░░░░░░░░░░` 0% |
-| **Total** | **2** | |
+| **Total** | **3** | |
 
 </td><td valign="top">
 
 | Platform | Solved | Share |
 |----------|:------:|-------|
-| 🟧 LeetCode | **1** | `█████░░░░░` 50% |
-| 🟩 HackerRank | **1** | `█████░░░░░` 50% |
+| 🟧 LeetCode | **2** | `███████░░░` 67% |
+| 🟩 HackerRank | **1** | `███░░░░░░░` 33% |
 | 🟦 GeeksforGeeks | **0** | `░░░░░░░░░░` 0% |
 
 </td>
@@ -61,6 +61,9 @@ Each solved problem lives in its own folder with a `.md` file named after the pr
 | 📅 Date Functions | **1** |
 | ☕ Java Primitive Types | **1** |
 | 🛡️ Exception Handling | **1** |
+| 🧮 Math / String | **1** |
+| 🪙 Greedy | **1** |
+| #️⃣ Hash Table | **1** |
 
 </td>
 </tr>
@@ -70,8 +73,9 @@ Each solved problem lives in its own folder with a `.md` file named after the pr
 
 | Language | Type | Submitted | Share | Problems | Also Written In |
 |----------|------|:---------:|-------|----------|-----------------|
-| ![MySQL](https://img.shields.io/badge/MySQL-4479A1?logo=mysql&logoColor=white) | SQL | **1** | `█████░░░░░` 50% | [197](./197.%20Rising%20Temperature/Rising%20Temperature.md) | PostgreSQL · SQL Server · Oracle · Pandas |
-| ![Java](https://img.shields.io/badge/Java-ED8B00?logo=openjdk&logoColor=white) | OOP / General | **1** | `█████░░░░░` 50% | [Java Datatypes](./Hackerrank%20Java/Java%20Datatypes.md) | — |
+| ![MySQL](https://img.shields.io/badge/MySQL-4479A1?logo=mysql&logoColor=white) | SQL | **1** | `███░░░░░░░` 33% | [197](./197.%20Rising%20Temperature/Rising%20Temperature.md) | PostgreSQL · SQL Server · Oracle · Pandas |
+| ![Java](https://img.shields.io/badge/Java-ED8B00?logo=openjdk&logoColor=white) | OOP / General | **1** | `███░░░░░░░` 33% | [Java Datatypes](./Hackerrank%20Java/Java%20Datatypes.md) | — |
+| ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black) | Scripting / General | **1** | `███░░░░░░░` 33% | [12](./12.%20Integer%20to%20Roman/Integer%20to%20Roman.md) | Python · Java · C++ |
 
 > **Submitted** = language the accepted solution was submitted in. **Also Written In** = extra reference implementations inside the problem's `.md` file.
 
@@ -81,6 +85,7 @@ Each solved problem lives in its own folder with a `.md` file named after the pr
 |:-:|---------|----------|:----------:|-------|----------|:-------:|:----:|:------:|----------|
 | 1 | [197. Rising Temperature](https://leetcode.com/problems/rising-temperature/) | LeetCode | 🟢 Easy | SQL, Self Join, Dates | MySQL | 79 ms | 2026-11-21 | ✅ | [📄 View](./197.%20Rising%20Temperature/Rising%20Temperature.md) |
 | 2 | [Java Datatypes](https://www.hackerrank.com/challenges/java-datatypes/problem) | HackerRank | 🟢 Easy | Java Primitive Types, Exception Handling | Java | — | 2026-11-21 | ✅ | [📄 View](./Hackerrank%20Java/Java%20Datatypes.md) |
+| 3 | [12. Integer to Roman](https://leetcode.com/problems/integer-to-roman/) | LeetCode | 🟡 Medium | Greedy, Math, String, Hash Table | JavaScript | 0 ms | 2026-11-22 | ✅ | [📄 View](./12.%20Integer%20to%20Roman/Integer%20to%20Roman.md) |
 
 > ✅ = solved and accepted &nbsp;·&nbsp; 🟢 Easy &nbsp;·&nbsp; 🟡 Medium &nbsp;·&nbsp; 🔴 Hard
 
@@ -89,6 +94,8 @@ Each solved problem lives in its own folder with a `.md` file named after the pr
 ```
 daily-practice/
 ├── README.md
+├── 12. Integer to Roman/
+│   └── Integer to Roman.md
 ├── 197. Rising Temperature/
 │   └── Rising Temperature.md
 └── Hackerrank Java/
