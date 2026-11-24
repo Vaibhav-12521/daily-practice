@@ -35,7 +35,7 @@ A mapping of digits to letters (just like on the telephone buttons) is given bel
 
 ### Example 2
 
-**Input:** `digits = "2"`
+**Input:** `digits = "2"` 
 
 **Output:** `["a","b","c"]`
 
