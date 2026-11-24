@@ -48,7 +48,6 @@ A mapping of digits to letters (just like on the telephone buttons) is given bel
 
 ## 💡 What Is the Question Really Asking?
 
-
 Remember old phones where you typed messages using number keys? Each key had 3 or 4 letters on it.
 
 If someone presses `2` then `3`, they could mean **any** letter from `2` (a, b, c) followed by **any** letter from `3` (d, e, f). We need to list **every** possible word.
