@@ -42,7 +42,7 @@ A mapping of digits to letters (just like on the telephone buttons) is given bel
 ### Constraints
 
 - `1 <= digits.length <= 4`
-- `digits[i]` is a digit in the range `['2', '9']`.
+- `digits[i]` is a digit in the range `['2', '9']`. 
 
 ---
 
