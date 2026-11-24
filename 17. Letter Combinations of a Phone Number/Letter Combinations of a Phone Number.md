@@ -45,7 +45,7 @@ A mapping of digits to letters (just like on the telephone buttons) is given bel
 - `digits[i]` is a digit in the range `['2', '9']`. 
 
 ---
-
+ 
 ## 💡 What Is the Question Really Asking?
 
 Remember old phones where you typed messages using number keys? Each key had 3 or 4 letters on it.
