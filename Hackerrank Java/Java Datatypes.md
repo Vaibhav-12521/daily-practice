@@ -137,7 +137,7 @@ public class Solution {
 
 ### What Each Part Does 
  
-| Code | In simple words |
+| Code | In simple words | 
 |------|-----------------|
 | `int t = sc.nextInt();` | Read how many numbers we need to check. |
 | `long x = sc.nextLong();` | Try to read the number as a `long`, the **biggest box**. If it's too big even for a `long`, Java throws an error here and we jump straight to `catch`. |
