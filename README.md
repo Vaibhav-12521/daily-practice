@@ -98,7 +98,7 @@ Each solved problem lives in its own folder with a `.md` file named after the pr
 
 > ✅ = solved and accepted &nbsp;·&nbsp; 🟢 Easy &nbsp;·&nbsp; 🟡 Medium &nbsp;·&nbsp; 🔴 Hard
 
-## 📁 Structure
+## 📁 Structure 
 
 ```
 daily-practice/
