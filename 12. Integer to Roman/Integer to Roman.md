@@ -82,7 +82,7 @@ Note: 49 is not 1 (`I`) less of 50 (`L`) because the conversion is based on deci
 ## 💡 What Is the Question Really Asking?
 
 Imagine you're paying an amount using **the biggest notes first**, like giving change at a shop.
-
+ 
 To pay 3749, you'd hand over as many 1000s as you can, then 500s, then 100s, and so on, until nothing is left. Roman numerals work exactly the same way.
 
 The only twist is the special "4 and 9" cases (`IV`, `IX`, `XL`, `XC`, `CD`, `CM`). The easy trick: **treat them as extra notes** of their own. Then our list of "notes" becomes:
