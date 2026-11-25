@@ -135,7 +135,7 @@ public class Solution {
 }
 ```
 
-### What Each Part Does
+### What Each Part Does 
  
 | Code | In simple words |
 |------|-----------------|

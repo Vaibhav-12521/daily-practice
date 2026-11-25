@@ -131,7 +131,7 @@ For each row in **w1** (today), we look for a row in **w2** whose date is exactl
 - Yesterday is `2015-01-03`. That row exists (id 3, temp 20). ✅
 - Pair: **today = 30, yesterday = 20**
 
-After the join, we have these pairs:
+After the join, we have these pairs: 
 
 ```
 +-------+------------+-----------+-------+------------+------------+
