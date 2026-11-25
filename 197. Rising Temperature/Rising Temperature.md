@@ -143,7 +143,7 @@ After the join, we have these pairs:
 | 4     | 2015-01-04 | 30        | 3     | 2015-01-03 | 20         |
 +-------+------------+-----------+-------+------------+------------+
 ```
-
+ 
 ### Step 2: Keep only the hotter days (the `WHERE`)
 
 Now check each pair: **is today's temperature bigger than yesterday's?**
