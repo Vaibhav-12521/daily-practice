@@ -82,7 +82,7 @@ Each solved problem lives in its own folder with a `.md` file named after the pr
 | ![Java](https://img.shields.io/badge/Java-ED8B00?logo=openjdk&logoColor=white) | OOP / General | **2** | `███░░░░░░░` 29% | [Java Datatypes](./Hackerrank%20Java/Java%20Datatypes.md) · [Java End-of-file](./Hackerrank%20Java/Java%20End-of-file.md) | — |
 | ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black) | Scripting / General | **4** | `██████░░░░` 57% | [11](./11.%20Container%20With%20Most%20Water/Container%20With%20Most%20Water.md) · [12](./12.%20Integer%20to%20Roman/Integer%20to%20Roman.md) · [17](./17.%20Letter%20Combinations%20of%20a%20Phone%20Number/Letter%20Combinations%20of%20a%20Phone%20Number.md) · [20](./20.%20Valid%20Parentheses/Valid%20Parentheses.md) | Python · Java · C++ |
 
-> **Submitted** = language the accepted solution was submitted in. **Also Written In** = extra reference implementations inside the problem's `.md` file.
+> **Submitted** = language the accepted solution was submitted in. **Also Written In** = extra reference implementations inside the problem's `.md` file. 
 
 ## 📚 Problem Index
 
