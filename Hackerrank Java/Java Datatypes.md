@@ -130,7 +130,7 @@ public class Solution {
                 System.out.println(sc.next() + " can't be fitted anywhere.");
             }
         }
-        sc.close();  
+        sc.close(); 
     }
 }
 ```
