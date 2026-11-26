@@ -70,7 +70,7 @@ Each solved problem lives in its own folder with a `.md` file named after the pr
 | 🥞 Stack | **1** |
 | ⛓️ Linked List | **1** |
 | 📥 Input Handling / Scanner | **1** |
-
+ 
 </td>
 </tr>
 </table> 
