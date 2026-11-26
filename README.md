@@ -39,7 +39,7 @@ Each solved problem lives in its own folder with a `.md` file named after the pr
 | Level | Solved | Share |
 |-------|:------:|-------| 
 | 🟢 Easy | **4** | `█████░░░░░` 50% |
-| 🟡 Medium | **4** | `█████░░░░░` 50% |
+| 🟡 Medium | **4** | `█████░░░░░` 50% | 
 | 🔴 Hard | **0** | `░░░░░░░░░░` 0% |
 | **Total** | **8** | |
 
