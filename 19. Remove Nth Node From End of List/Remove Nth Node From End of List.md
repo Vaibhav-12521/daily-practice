@@ -3,7 +3,7 @@
 | Platform | Difficulty | Topic | Language | Status |
 |----------|:----------:|-------|----------|:------:|
 | [LeetCode](https://leetcode.com/problems/remove-nth-node-from-end-of-list/) | 🟡 Medium | Linked List, Two Pointers | JavaScript | ✅ Accepted (0 ms) |
-
+ 
 ---
 
 ## 📝 Question
