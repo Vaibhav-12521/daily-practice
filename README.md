@@ -34,7 +34,7 @@ Each solved problem lives in its own folder with a `.md` file named after the pr
 <th>By Topic</th>
 </tr>
 <tr>
-<td valign="top"> 
+<td valign="top">  
 
 | Level | Solved | Share |
 |-------|:------:|-------|
