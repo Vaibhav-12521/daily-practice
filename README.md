@@ -1,10 +1,10 @@
 # Daily Practice
 
-![Solved](https://img.shields.io/badge/Solved-7-brightgreen?style=for-the-badge)
+![Solved](https://img.shields.io/badge/Solved-8-brightgreen?style=for-the-badge)
 ![Easy](https://img.shields.io/badge/Easy-4-00b8a3?style=for-the-badge)
-![Medium](https://img.shields.io/badge/Medium-3-ffc01e?style=for-the-badge)
+![Medium](https://img.shields.io/badge/Medium-4-ffc01e?style=for-the-badge)
 ![Hard](https://img.shields.io/badge/Hard-0-ff375f?style=for-the-badge)
-![Last Solved](https://img.shields.io/badge/Last%20Solved-2026--11--25-blue?style=for-the-badge)
+![Last Solved](https://img.shields.io/badge/Last%20Solved-2026--11--26-blue?style=for-the-badge)
 
 My daily coding practice solutions from **LeetCode**, **HackerRank**, and other platforms.
 
@@ -38,17 +38,17 @@ Each solved problem lives in its own folder with a `.md` file named after the pr
 
 | Level | Solved | Share |
 |-------|:------:|-------|
-| 🟢 Easy | **4** | `██████░░░░` 57% |
-| 🟡 Medium | **3** | `████░░░░░░` 43% |
+| 🟢 Easy | **4** | `█████░░░░░` 50% |
+| 🟡 Medium | **4** | `█████░░░░░` 50% |
 | 🔴 Hard | **0** | `░░░░░░░░░░` 0% |
-| **Total** | **7** | |
+| **Total** | **8** | |
 
 </td><td valign="top">
 
 | Platform | Solved | Share |
 |----------|:------:|-------|
-| 🟧 LeetCode | **5** | `███████░░░` 71% |
-| 🟩 HackerRank | **2** | `███░░░░░░░` 29% |
+| 🟧 LeetCode | **6** | `████████░░` 75% |
+| 🟩 HackerRank | **2** | `██░░░░░░░░` 25% |
 | 🟦 GeeksforGeeks | **0** | `░░░░░░░░░░` 0% |
 
 </td>
@@ -63,11 +63,12 @@ Each solved problem lives in its own folder with a `.md` file named after the pr
 | 🛡️ Exception Handling | **1** |
 | 🧮 Math / String | **1** |
 | 🪙 Greedy | **2** |
-| 👉👈 Two Pointers | **1** |
+| 👉👈 Two Pointers | **2** |
 | 📦 Array | **1** |
 | 🔁 Backtracking / Recursion | **1** |
 | #️⃣ Hash Table | **3** |
 | 🥞 Stack | **1** |
+| ⛓️ Linked List | **1** |
 | 📥 Input Handling / Scanner | **1** |
 
 </td>
@@ -78,9 +79,9 @@ Each solved problem lives in its own folder with a `.md` file named after the pr
 
 | Language | Type | Submitted | Share | Problems | Also Written In |
 |----------|------|:---------:|-------|----------|-----------------|
-| ![MySQL](https://img.shields.io/badge/MySQL-4479A1?logo=mysql&logoColor=white) | SQL | **1** | `█░░░░░░░░░` 14% | [197](./197.%20Rising%20Temperature/Rising%20Temperature.md) | PostgreSQL · SQL Server · Oracle · Pandas |
-| ![Java](https://img.shields.io/badge/Java-ED8B00?logo=openjdk&logoColor=white) | OOP / General | **2** | `███░░░░░░░` 29% | [Java Datatypes](./Hackerrank%20Java/Java%20Datatypes.md) · [Java End-of-file](./Hackerrank%20Java/Java%20End-of-file.md) | — |
-| ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black) | Scripting / General | **4** | `██████░░░░` 57% | [11](./11.%20Container%20With%20Most%20Water/Container%20With%20Most%20Water.md) · [12](./12.%20Integer%20to%20Roman/Integer%20to%20Roman.md) · [17](./17.%20Letter%20Combinations%20of%20a%20Phone%20Number/Letter%20Combinations%20of%20a%20Phone%20Number.md) · [20](./20.%20Valid%20Parentheses/Valid%20Parentheses.md) | Python · Java · C++ | 
+| ![MySQL](https://img.shields.io/badge/MySQL-4479A1?logo=mysql&logoColor=white) | SQL | **1** | `█░░░░░░░░░` 13% | [197](./197.%20Rising%20Temperature/Rising%20Temperature.md) | PostgreSQL · SQL Server · Oracle · Pandas |
+| ![Java](https://img.shields.io/badge/Java-ED8B00?logo=openjdk&logoColor=white) | OOP / General | **2** | `██░░░░░░░░` 25% | [Java Datatypes](./Hackerrank%20Java/Java%20Datatypes.md) · [Java End-of-file](./Hackerrank%20Java/Java%20End-of-file.md) | — |
+| ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black) | Scripting / General | **5** | `██████░░░░` 63% | [11](./11.%20Container%20With%20Most%20Water/Container%20With%20Most%20Water.md) · [12](./12.%20Integer%20to%20Roman/Integer%20to%20Roman.md) · [17](./17.%20Letter%20Combinations%20of%20a%20Phone%20Number/Letter%20Combinations%20of%20a%20Phone%20Number.md) · [19](./19.%20Remove%20Nth%20Node%20From%20End%20of%20List/Remove%20Nth%20Node%20From%20End%20of%20List.md) · [20](./20.%20Valid%20Parentheses/Valid%20Parentheses.md) | Python · Java · C++ | 
 
 > **Submitted** = language the accepted solution was submitted in. **Also Written In** = extra reference implementations inside the problem's `.md` file. 
 
@@ -95,6 +96,7 @@ Each solved problem lives in its own folder with a `.md` file named after the pr
 | 5 | [11. Container With Most Water](https://leetcode.com/problems/container-with-most-water/) | LeetCode | 🟡 Medium | Array, Two Pointers, Greedy | JavaScript | 0 ms | 2026-11-23 | ✅ | [📄 View](./11.%20Container%20With%20Most%20Water/Container%20With%20Most%20Water.md) |
 | 6 | [17. Letter Combinations of a Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number/) | LeetCode | 🟡 Medium | Backtracking, Recursion, Hash Table, String | JavaScript | 0 ms | 2026-11-24 | ✅ | [📄 View](./17.%20Letter%20Combinations%20of%20a%20Phone%20Number/Letter%20Combinations%20of%20a%20Phone%20Number.md) |
 | 7 | [20. Valid Parentheses](https://leetcode.com/problems/valid-parentheses/) | LeetCode | 🟢 Easy | Stack, String, Hash Table | JavaScript | 0 ms | 2026-11-25 | ✅ | [📄 View](./20.%20Valid%20Parentheses/Valid%20Parentheses.md) |
+| 8 | [19. Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/) | LeetCode | 🟡 Medium | Linked List, Two Pointers | JavaScript | 0 ms | 2026-11-26 | ✅ | [📄 View](./19.%20Remove%20Nth%20Node%20From%20End%20of%20List/Remove%20Nth%20Node%20From%20End%20of%20List.md) |
 
 > ✅ = solved and accepted &nbsp;·&nbsp; 🟢 Easy &nbsp;·&nbsp; 🟡 Medium &nbsp;·&nbsp; 🔴 Hard
 
@@ -109,6 +111,8 @@ daily-practice/
 │   └── Integer to Roman.md
 ├── 17. Letter Combinations of a Phone Number/
 │   └── Letter Combinations of a Phone Number.md
+├── 19. Remove Nth Node From End of List/
+│   └── Remove Nth Node From End of List.md
 ├── 20. Valid Parentheses/
 │   └── Valid Parentheses.md
 ├── 197. Rising Temperature/
