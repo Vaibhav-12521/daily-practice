@@ -5,7 +5,7 @@
 | [LeetCode](https://leetcode.com/problems/valid-parentheses/) | 🟢 Easy | String, Stack, Hash Table | JavaScript | ✅ Accepted (0 ms) |
 
 ---
-
+ 
 ## 📝 Question  
 
 Given a string `s` containing just the characters `'('`, `')'`, `'{'`, `'}'`, `'['` and `']'`, determine if the input string is valid.
