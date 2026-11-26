@@ -43,7 +43,7 @@ Each solved problem lives in its own folder with a `.md` file named after the pr
 | 🔴 Hard | **0** | `░░░░░░░░░░` 0% |
 | **Total** | **8** | |
 
-</td><td valign="top">
+</td><td valign="top"> 
 
 | Platform | Solved | Share |
 |----------|:------:|-------|
