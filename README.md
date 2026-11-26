@@ -51,7 +51,7 @@ Each solved problem lives in its own folder with a `.md` file named after the pr
 | 🟩 HackerRank | **2** | `██░░░░░░░░` 25% |
 | 🟦 GeeksforGeeks | **0** | `░░░░░░░░░░` 0% |
 
-</td>
+</td> 
 <td valign="top">
 
 | Topic | Solved |
