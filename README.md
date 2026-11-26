@@ -73,7 +73,7 @@ Each solved problem lives in its own folder with a `.md` file named after the pr
 
 </td>
 </tr>
-</table>
+</table> 
 
 ## 💻 Languages 
 
