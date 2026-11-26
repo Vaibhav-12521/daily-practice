@@ -56,7 +56,7 @@ Each solved problem lives in its own folder with a `.md` file named after the pr
 
 | Topic | Solved |
 |-------|:------:|
-| 🗄️ SQL / Database | **1** |
+| 🗄️ SQL / Database | **1** | 
 | 🔗 Self Join | **1** |
 | 📅 Date Functions | **1** |
 | ☕ Java Primitive Types | **1** |
