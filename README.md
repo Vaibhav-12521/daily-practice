@@ -37,7 +37,7 @@ Each solved problem lives in its own folder with a `.md` file named after the pr
 <td valign="top">   
 
 | Level | Solved | Share |
-|-------|:------:|-------|
+|-------|:------:|-------| 
 | 🟢 Easy | **4** | `█████░░░░░` 50% |
 | 🟡 Medium | **4** | `█████░░░░░` 50% |
 | 🔴 Hard | **0** | `░░░░░░░░░░` 0% |
