@@ -75,7 +75,7 @@ Each solved problem lives in its own folder with a `.md` file named after the pr
 </tr>
 </table>
 
-## 💻 Languages
+## 💻 Languages 
 
 | Language | Type | Submitted | Share | Problems | Also Written In |
 |----------|------|:---------:|-------|----------|-----------------|
