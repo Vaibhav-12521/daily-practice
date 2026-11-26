@@ -133,7 +133,7 @@ For each row in **w1** (today), we look for a row in **w2** whose date is exactl
 
 After the join, we have these pairs: 
 
-```
+``` 
 +-------+------------+-----------+-------+------------+------------+
 | w1.id | w1.date    | w1.temp   | w2.id | w2.date    | w2.temp    |
 |       | (today)    | (today)   |       | (yesterday)| (yesterday)|
