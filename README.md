@@ -32,7 +32,7 @@ Each solved problem lives in its own folder with a `.md` file named after the pr
 <th>By Difficulty</th>
 <th>By Platform</th>
 <th>By Topic</th>
-</tr>
+</tr> 
 <tr>
 <td valign="top">   
 
